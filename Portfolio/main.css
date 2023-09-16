@@ -4,4 +4,22 @@ html {
 body{
     background-color: #333;
     color: whitesmoke;
+    display: grid;
 }
+
+.nav {
+    padding: 1vw 1vw;
+    height: 3vw;
+    width: 90vw;
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    background-color: red;
+    
+  }
+
+  .nav h2{
+    font-size: 3vw;
+    margin: auto;
+  }
