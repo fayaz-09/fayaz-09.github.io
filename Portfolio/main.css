@@ -7,19 +7,106 @@ body{
     display: grid;
 }
 
-.nav {
+.main-header{
+  height: 50vh;
+  width: 100%;
+  display: grid;
+
+}
+
+.main-content{
+  width: 100%;
+}
+
+.top-Bar {
     padding: 1vw 1vw;
     height: 3vw;
     width: 90vw;
     display: grid;
     position: relative;
-    align-items: center;
-    justify-self: center;
-    background-color: red;
-    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    display: inline-block;
   }
 
-  .nav h2{
+  .top-Bar h2{
     font-size: 3vw;
     margin: auto;
+  }
+
+  .links-Container {
+    height: 3vw;
+    width: 18vw;
+    display: grid;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-self: right;
+    border-color: aquamarine;
+    border-width: 0.1vw;
+    border-style: solid;
+  }
+
+  .link-box {
+    height: 3vw;
+    width: 4vw;
+    display: inline-block;
+    background-color: blueviolet;
+    justify-self: left;
+    border-color: black;
+    border-width: 0.1vw;
+    border-style: solid;
+  }
+
+  .logo-Container {
+    height: 3vw;
+    width: 10vw;
+    margin-right: 61vw;
+    display: grid;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-self: center;
+    border-color: aquamarine;
+    border-width: 0.1vw;
+    border-style: solid;
+  }
+  
+  .intro-container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: aquamarine;
+    border-width: 0.1vw;
+    border-style: solid;
+  }
+
+  .projects-container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: aquamarine;
+    border-width: 0.1vw;
+    border-style: solid;
+  }
+
+  .proj-grid {
+    display: grid;
+    grid-auto-flow: row;
+    column-gap: 1vw;
+    row-gap: 1vh;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .grid-item {
+    width: 100%;
+    min-height: 25vw;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: aquamarine;
+    border-width: 0.1vw;
+    border-style: solid;
   }
