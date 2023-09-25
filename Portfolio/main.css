@@ -5,6 +5,12 @@ body{
     background-color: #333;
     color: whitesmoke;
     display: grid;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+}
+
+img{
+  display: block;
 }
 
 .main-header{
@@ -18,95 +24,139 @@ body{
   width: 100%;
 }
 
-.top-Bar {
-    padding: 1vw 1vw;
-    height: 3vw;
-    width: 90vw;
-    display: grid;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
-    display: inline-block;
-  }
-
-  .top-Bar h2{
-    font-size: 3vw;
-    margin: auto;
-  }
-
-  .links-Container {
-    height: 3vw;
-    width: 18vw;
-    display: grid;
-    position: relative;
-    display: inline-block;
-    align-items: center;
-    justify-self: right;
-    border-color: aquamarine;
-    border-width: 0.1vw;
-    border-style: solid;
-  }
-
-  .link-box {
-    height: 3vw;
-    width: 4vw;
-    display: inline-block;
-    background-color: blueviolet;
-    justify-self: left;
-    border-color: black;
-    border-width: 0.1vw;
-    border-style: solid;
-  }
-
-  .logo-Container {
-    height: 3vw;
-    width: 10vw;
-    margin-right: 61vw;
-    display: grid;
-    position: relative;
-    display: inline-block;
-    align-items: center;
-    justify-self: center;
-    border-color: aquamarine;
-    border-width: 0.1vw;
-    border-style: solid;
-  }
+.grow { 
+  transition: all .2s ease-in-out; 
+}
   
-  .intro-container {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    border-color: aquamarine;
-    border-width: 0.1vw;
-    border-style: solid;
-  }
+.grow:hover { 
+  transform: scale(1.1); 
+}
 
-  .projects-container {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    border-color: aquamarine;
-    border-width: 0.1vw;
-    border-style: solid;
-  }
+.top-Bar {
+  padding: 1vw 1vw;
+  height: 3vw;
+  width: 90vw;
+  display: grid;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  display: inline-block;
+}
 
-  .proj-grid {
-    display: grid;
-    grid-auto-flow: row;
-    column-gap: 1vw;
-    row-gap: 1vh;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 3%;
-    margin-left: 3%;
-  }
+.top-Bar h2{
+  font-size: 3vw;
+  margin: auto;
+}
 
-  .grid-item {
-    width: 100%;
-    min-height: 25vw;
-    margin-right: auto;
-    margin-left: auto;
-    border-color: aquamarine;
-    border-width: 0.1vw;
-    border-style: solid;
-  }
+.links-Container {
+  height: 3vw;
+  width: 18vw;
+  display: grid;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-self: right;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.link-box {
+  height: 3vw;
+  width: 4vw;
+  display: inline-block;
+  background-color: blueviolet;
+  justify-self: left;
+  border-color: black;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.logo-Container {
+  height: 3vw;
+  width: 10vw;
+  margin-right: 61vw;
+  display: grid;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-self: center;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.intro-container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.projects-container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.proj-grid {
+  display: grid;
+  grid-auto-flow: row;
+  column-gap: 1vw;
+  row-gap: 1vh;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.grid-item {
+  width: 100%;
+  min-height: 30vw;
+  max-height: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+  text-decoration-line: none;
+}
+
+.item-image {
+  width: 85%;
+  height: 319px;
+  padding: 1% 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-description {
+  width: 95%;
+  height: 30%;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-item h2 {
+  font-size: 3vw;
+  color: whitesmoke;
+  text-decoration-line: none;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.grid-item p {
+  font-size: 1.5vw;
+  color: whitesmoke;
+  text-decoration-line: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
