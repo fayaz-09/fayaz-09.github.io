@@ -17,7 +17,12 @@ img{
   height: 50vh;
   width: 100%;
   display: grid;
+}
 
+.proj-header{
+  height: auto;
+  width: 100%;
+  display: grid;
 }
 
 .main-content{
@@ -96,6 +101,25 @@ img{
   border-style: solid;
 }
 
+.proj-intro {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.proj-intro h1 {
+  font-size: 6vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.55vw;
+  font-weight: 700;
+  background: linear-gradient(45deg, blueviolet, aquamarine, whitesmoke);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .projects-container {
   width: 90%;
   margin-right: auto;
@@ -103,6 +127,35 @@ img{
   border-color: aquamarine;
   border-width: 0.1vw;
   border-style: solid;
+}
+
+.summary-container {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.summary-container h2 {
+  font-size: 5vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.55vw;
+  font-weight: 500;
+  background: linear-gradient(45deg, blueviolet, aquamarine, whitesmoke);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.summary-container h3 {
+  font-size: 2vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.55vw;
+  font-weight: 300;
+  background: linear-gradient(45deg, blueviolet, aquamarine, whitesmoke);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .proj-grid {
@@ -128,8 +181,9 @@ img{
 }
 
 .item-image {
+  aspect-ratio: 1920/1080;
   width: 85%;
-  height: 319px;
+  height: auto;
   padding: 1% 1%;
   margin-left: auto;
   margin-right: auto;
@@ -159,4 +213,13 @@ img{
   text-decoration-line: none;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+.head-image {
+  aspect-ratio: 1920/1080;
+  width: 60%;
+  height: auto;
+  padding: 1% 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
