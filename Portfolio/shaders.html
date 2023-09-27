@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fayaz Seedat">
+    <meta name="Description" content="This page details the work done on my final year university project soul control">
+    <title>My webpage</title>
+    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-Bar">
+
+        <a title="home icon" href="index.html" class="logo-Container"></a>
+
+        <div class="links-Container">
+            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+        </div>
+    </div> 
+
+    <header class="proj-header">
+        <div class="proj-intro">
+            <h1>OpenGL shaders</h1>
+            <img src="images/Shaders1.png" alt="test image" width="1920" height="1080" loading="lazy" class="head-image">
+        </div>
+
+    </header>
+
+    <main class="main-content">
+        <div class="summary-container">
+            <p>
+                An OpenGL based project which explores the basics of lighting, post processing and mapping techniques.
+            </p>
+           
+        </div>
+
+        <div class="summary-container">
+            <h2>Controls</h2>
+
+            <p>
+                The program features a variety of key binds which allow for the toggling of various features and implemented techniques. The key binds are as follows:
+            </p>
+
+            <ul>
+                <li>Q – Toggle between normal mapping parallax mapping</li>
+                <li>1 – Toggle directional light</li>
+                <li>2 – Toggle point lights</li>
+                <li>3 – Toggle spot light</li>
+                <li>4 – Toggle rim lighting</li>
+                <li>B – Switches between different postprocessing techniques </li>
+            </ul>
+        </div>
+
+        <div class="summary-container">
+            <h2>Lighting</h2>
+
+            <p> 
+                Blinn-phong is the main lighting model used, which is the sum of three different lighting types ambient, diffuse and specular lighting. 
+            </p>
+
+            <h3>Ambient Light</h3>
+
+            <p>
+                Ambient light is a simplistic way of replicating the fact that objects always have some sort of light on them, due to light coming from many sources and bouncing off various surfaces to reach objects even in the dark. Its calculated in the fragment shader by doing the calculation lightColour * objectColour * ambientStrength, in my implementation the ambientStrength is called ambientFactor. This results in the object being in the dark however still visible due to it being provided with some ambient light.
+            </p>
+
+            <h3>Diffuse Light</h3>
+
+            <p>
+                Diffuse is used to simulate how the direction of a light source, and the angle the light hits an objects surface affects the brightness of that object. For example if the light source is directly facing one side of a cube then that face will be the part of the cube that’s the most lit while other faces will be darker.
+            </p>
+
+            <h3>Specular Light</h3>
+
+            <p>
+                A specular highlight is the bright spot on an object when a light reflects off of it, objects which are shinier will have a more visible specular highlight. 
+            </p>
+
+
+        </div>
+
+        <div class="summary-container">
+            <h2>Textures</h2>
+
+            <p> 
+                A texture is an image which can be added to an object to provide it with details that give the illusion of visually appearing to be a highly detailed object without having to use extra vertices. There are many different types of textures that can be applied to an object in it's shader which will each produce different results in order to create a more visually detailed object.
+            </p>
+
+            <h3>Diffuse maps</h3>
+
+            <p>
+                Diffuse maps are an image which will wrapped around an object to determine the colour data for each fragment. To visually see the texture applied to a desired object, it's shader needs to be updated so that instead of setting a colour for each fragment the textures colour data is pulled from instead.
+            </p>
+
+            <h3>Specular Maps</h3>
+
+            <p>
+                Specular maps are used to accurately portray specular highlights on an object. If the diffuse map we’ve used for an object is a material that doesn’t reflect light well, such as concrete or wood, then it shouldn’t have specular highlights that would be more typical of a metallic object. Specular maps are black and white images where pixels with values closer to white will mean a higher specular component in that part of the texture.
+            </p>
+
+            <h3>Normal mapping</h3>
+
+            <p>
+                Normal mapping allows for the sampling of normal from the texture itself and enables the use of per fragment normal. These two aspects of normal mapping allows for a texture to appear to have depth, so little cracks or divots in a texture will appear like they’re actually on the model. Normal vectors are stored within a normal map by making use of the RGB values in the image which are then converted into a vector for the normal at that fragment when it’s sampled.
+            </p>
+
+            <h3>Parallax mapping</h3>
+
+            <p>
+                Like normal mapping in that its used to provide an illusion of depth and provides a texture with a more highly detailed look. When paired with normal mapping the results are a surface that looks like it has varied level of raises and divots, as well as adjusting to the cameras view to maintain this look. Parallax mapping is similar to displacement mapping techniques where vertices are offset based on the geometrical values stored within a texture, with both even using a displacement map to do this also called a height map. Parallax mapping however tries to achieve this effect by using fewer vertices than displacement mapping. The goal is to offset texture coordinates based on the angle its viewed from so that a fragments surface appears higher or lower than it actually is. 
+            </p>
+        </div>
+
+        
+    </main>
+
+</body>

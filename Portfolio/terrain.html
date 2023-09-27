@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fayaz Seedat">
+    <meta name="Description" content="This page details the work done on my final year university project soul control">
+    <title>My webpage</title>
+    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-Bar">
+
+        <a title="home icon" href="index.html" class="logo-Container"></a>
+
+        <div class="links-Container">
+            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+        </div>
+    </div> 
+
+    <header class="proj-header">
+        <div class="proj-intro">
+            <h1>OpenGL terrain generation</h1>
+            <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="head-image">
+        </div>
+
+    </header>
+
+    <main class="main-content">
+        <div class="summary-container">
+            <p>
+                This project makes use of various shaders and techniques, within the OpenGL render pipeline, to create a procedurally generated piece of terrain. Technniques implemented include distance based tesselation of the terrain to create more detail via an increased polygon count on areas of the terrain closer to the camera, as well as procedural generation by calculating perlin noise within a compute shader. 
+            </p>
+           
+        </div>
+
+        <div class="summary-container">
+            <h2>Options</h2>
+
+            <p>
+                The program features a variety of key binds which allow for the toggling of various features and implemented techniques. The key binds are as follows:
+            </p>
+
+            <ul>
+                <li>Q – Toggle normal mapping</li>
+                <li>E – Toggle sky box</li>
+                <li>1 – Toggle fog</li>
+                <li>2 – Toggle GL_LINE</li>
+                <li>3 – Toggle between using surface and CDM normals</li>
+                <li>4 – Switches between different texture techniques applied to the terrain</li>
+                <li>5 – Toggle between height map and compute shader generated heights using perlin noise</li>
+            </ul>
+            
+            <h3>GL_LINE toggle</h3>
+
+            <p>
+                This is a simple toggle which allows for looking at a wireframe of the terrain instead of the default GL_FILL which displays the terrain as a full block of colour. The GL_LINE toggle is useful as it allows for more accurately seeing the effects of tesselation on the terrain.
+            </p>
+            <div class="display-grid">
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>GL_LINE</h2>
+                    </div>
+                </div>
+
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>GL_FILL</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3>Height map</h3>
+
+            <p>
+                This toggle switches the terrain between using a set height map, or a perlin noise generated height map. This perlin noise height map is calculated on start up via a compute shader to procedurally generate a set of heights, which will be different each time the program is run.
+            </p>
+            <div class="display-grid">
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Height Map</h2>
+                    </div>
+                </div>
+
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Perlin noise generated heights</h2>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Normals</h3>
+
+            <p>
+                This toggle determines which method is used to calculate the normals of the terrain. Normals are needed as it allows for shading of the terrain based on the value of the normal, which when paired with lighting allows us to visually represent the difference in height on areas of the terrain. When no normals have been calculated the terrain will simply appear as a flat colour. Surface normals are calculated in the geometry shader by doing the dot product between two vectors going along two edges of a primitive. This will provide a new vector which would be the surface normal and will result in flat looking shading on the terrain. The central difference method (CDM) is used to give more realistic shading by calculating the normal of a specific point by using the heights of neighbouring points up, down, left and right from the concerned point.  
+            </p>
+            <div class="display-grid">
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Surface normals</h2>
+                    </div>
+                </div>
+
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Central difference method (CDM)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="summary-container">
+            <h2>Tesselation</h2>
+
+            <p>
+                Tesselation is used on the terrain to provide more detail by increasing the number of polygons used to create it. However tesselation requires a lot of calculations on a frame by frame basis, which inevitably leads to an increase in computational power needed. To decrease the amount of calculation needed, distance based tesselation is used to only tesselate areas of the terrain closer to the camera while further areas are not as the camera won't be able to see them anyway. This leads to increased detail only on parts of the terrain that can be seen, thus saving resources.
+            </p>
+
+            <div class="display-grid">
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Far</h2>
+                    </div>
+                </div>
+
+                <div class="display-item">
+                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Close</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>

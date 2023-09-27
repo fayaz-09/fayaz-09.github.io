@@ -168,6 +168,16 @@ img{
   margin-left: 3%;
 }
 
+.display-grid {
+  display: grid;
+  grid-auto-flow: row;
+  column-gap: 0.5vw;
+  row-gap: 0.5vh;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
 .grid-item {
   width: 100%;
   min-height: 30vw;
@@ -178,6 +188,44 @@ img{
   border-width: 0.1vw;
   border-style: solid;
   text-decoration-line: none;
+}
+
+.grid-item h2 {
+  font-size: 3vw;
+  background: linear-gradient(45deg, blueviolet, aquamarine, whitesmoke);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration-line: none;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.grid-item p {
+  font-size: 1.5vw;
+  color: whitesmoke;
+  text-decoration-line: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.display-item {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+  text-decoration-line: none;
+}
+
+.display-item h2 {
+  font-size: 2vw;
+  background: linear-gradient(45deg, blueviolet, aquamarine, whitesmoke);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration-line: none;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .item-image {
@@ -199,20 +247,14 @@ img{
   margin-right: auto;
 }
 
-.grid-item h2 {
-  font-size: 3vw;
-  color: whitesmoke;
-  text-decoration-line: none;
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-
-.grid-item p {
-  font-size: 1.5vw;
-  color: whitesmoke;
-  text-decoration-line: none;
-  margin-top: 1%;
-  margin-bottom: 1%;
+.display-description {
+  width: 95%;
+  height: auto;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .head-image {
