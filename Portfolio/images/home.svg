@@ -1,0 +1,89 @@
+<svg width="106" height="59" viewBox="0 0 106 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="home" clip-path="url(#clip0_1_2)">
+        <g id="monitor">
+            <g id="screen">
+                <rect id="Rectangle 1" x="58" y="48" width="6" height="6" fill="#707070"/>
+                <rect id="Rectangle 2" x="53" y="52" width="16" height="2" fill="#626262"/>
+                <rect id="ScreenBack" x="16" width="90" height="50" rx="2" fill="#545454"/>
+                <rect id="ScreenMid" x="18" y="2" width="86" height="46" fill="#B8DBE3"/>
+            </g>
+            <g id="programWindow">
+                <rect id="proWindow" x="21" y="4" width="82" height="42" fill="#454545"/>
+                <rect id="proTopBar" x="21" y="4" width="82" height="5" fill="#7D7D7D"/>
+                <g id="restoreIcon">
+                    <rect id="restoreBack" x="95.95" y="4.95" width="2.1" height="2.1" fill="#7D7D7D" stroke="black" stroke-width="0.1"/>
+                    <rect id="restoreFront" x="94.95" y="5.95" width="2.1" height="2.1" fill="#7D7D7D" stroke="black" stroke-width="0.1"/>
+                </g>
+                <g id="closeIcon">
+                    <line id="close2" x1="99.0354" y1="4.96464" x2="102.035" y2="7.96464" stroke="black" stroke-width="0.1"/>
+                    <line id="close1" x1="98.9646" y1="7.96464" x2="101.965" y2="4.96464" stroke="black" stroke-width="0.1"/>
+                </g>
+                <line id="miniIcon" x1="91" y1="6.95" x2="94" y2="6.95" stroke="black" stroke-width="0.1"/>
+                <g id="numbers">
+                    <text id="1" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="25.1406" y="12.9545">1</tspan></text>
+                    <text id="2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.5781" y="16.9545">2&#10;</tspan></text>
+                    <text id="3" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.4531" y="20.9545">3</tspan></text>
+                    <text id="4" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.4336" y="24.9545">4&#10;</tspan></text>
+                    <text id="5" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.5664" y="28.9545">5</tspan></text>
+                    <text id="6" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.5039" y="32.9545">6</tspan></text>
+                    <text id="7" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.5352" y="36.9545">8&#10;</tspan></text>
+                    <text id="8" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="24.5039" y="40.9545">9&#10;</tspan></text>
+                    <text id="9" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="4" letter-spacing="0em"><tspan x="22.6406" y="44.9545">10</tspan></text>
+                </g>
+            </g>
+        </g>
+        <g id="mouse">
+            <path id="Vector 1" d="M64 50C79.9529 53.756 84.9702 50.1393 86 54.5" stroke="black" stroke-width="0.3"/>
+            <rect id="Rectangle 3" x="83" y="55" width="6" height="2" rx="1" fill="#6E5454"/>
+            <ellipse id="Ellipse 1" cx="86" cy="55.5" rx="3" ry="1.5" fill="#C25757"/>
+            <ellipse id="Ellipse 2" cx="86" cy="56" rx="3" ry="1" fill="#6E5454"/>
+            <line id="Line 1" x1="86.05" y1="54" x2="86.05" y2="55" stroke="black" stroke-width="0.1"/>
+        </g>
+        <g id="keyboard">
+            <path id="Vector 2" d="M58 50C52.193 51.0356 50.1934 52.0904 52 56" stroke="black" stroke-width="0.3"/>
+            <rect id="Rectangle 4" x="32" y="56" width="40" height="2" rx="1" fill="#D9D9D9"/>
+            <path id="key" d="M69.3333 55H68.6667H68.3333L68 56H70L69.6667 55H69.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_2" d="M65.3333 55H63.6667H62.8333L62 56H67L66.1667 55H65.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_3" d="M60.3333 55H59.6667H59.3333L59 56H61L60.6667 55H60.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_4" d="M58.3333 55H57.6667H57.3333L57 56H59L58.6667 55H58.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_5" d="M51.3333 55H50.6667H50.3333L50 56H52L51.6667 55H51.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_6" d="M49.6667 55H48.3333H47.6667L47 56H51L50.3333 55H49.6667Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_7" d="M54.6667 55H52.3333H51.1667L50 56H57L55.8333 55H54.6667Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_8" d="M45 55H44H43.5L43 56H46L45.5 55H45Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_9" d="M42.3333 55H41.6667H41.3333L41 56H43L42.6667 55H42.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_10" d="M40.3333 55H39.6667H39.3333L39 56H41L40.6667 55H40.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_11" d="M37.6667 55H36.3333H35.6667L35 56H39L38.3333 55H37.6667Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+            <path id="key_12" d="M34.3333 55H33.6667H33.3333L33 56H35L34.6667 55H34.3333Z" fill="#232323" stroke="black" stroke-width="0.1"/>
+        </g>
+        <g id="console">
+            <rect id="Rectangle 5" x="1" y="15" width="10" height="40" rx="1" fill="#121212"/>
+            <path id="Vector 3" d="M4 14L1 15V55L4 56V53.5V14Z" fill="#E9E6E6" stroke="#E9E6E6" stroke-width="0.3"/>
+            <path id="Vector 4" d="M8 56L11 55L11 15L8 14V16.5L8 56Z" fill="#E9E6E6" stroke="#E9E6E6" stroke-width="0.3"/>
+            <rect id="Rectangle 6" x="5" y="16" width="2" height="20" rx="1" fill="#3F3F3F"/>
+            <path id="Line 2" d="M6.14999 17L6.14999 35" stroke="black" stroke-width="0.3" stroke-linecap="round"/>
+            <rect id="Rectangle 7" x="5" y="49" width="2" height="4" fill="#3F3F3F"/>
+            <rect id="Rectangle 8" x="5" y="44" width="2" height="4" fill="#3F3F3F"/>
+            <circle id="Ellipse 3" cx="6" cy="51" r="1.05" stroke="#C72525" stroke-width="0.1"/>
+            <line id="Line 3" x1="7" y1="51.05" x2="6" y2="51.05" stroke="#C72525" stroke-width="0.1"/>
+            <line id="Line 4" x1="6.05" y1="45" x2="6.05" y2="47" stroke="#2AD527" stroke-width="0.1"/>
+            <path id="Polygon 1" d="M6.3 45.2681L6.93386 46L6.3 46.7319V45.2681Z" stroke="#2AD527" stroke-width="0.1"/>
+        </g>
+        <g id="controller">
+            <path id="Vector 6" d="M11.4 51.8V52.6H13.96L14.6 51H12.04L11.4 51.8Z" fill="black" stroke="black" stroke-width="0.17"/>
+            <path id="Vector 7" d="M24.2 51.8V52.6H23.56H21.64L21 51H23.56L24.2 51.8Z" fill="black" stroke="black" stroke-width="0.17"/>
+            <path id="Vector 5" d="M13.993 56.4224L12.1475 58.22C11.667 58.688 10.9446 58.8042 10.3416 58.5105C9.58727 58.1432 9.24814 57.2529 9.56689 56.4767L10.819 53.4277C11.1537 52.6127 11.8297 51.986 12.6677 51.7139L14.4151 51.1466C14.7143 51.0495 15.0269 51 15.3415 51H20.2585C20.5731 51 20.8857 51.0495 21.1849 51.1466L22.9323 51.7139C23.7703 51.986 24.4463 52.6127 24.781 53.4277L26.0331 56.4767C26.3519 57.2529 26.0127 58.1432 25.2584 58.5105C24.6554 58.8042 23.933 58.688 23.4525 58.22L21.607 56.4224C21.0468 55.8768 20.2957 55.5714 19.5138 55.5714H16.0862C15.3043 55.5714 14.5532 55.8768 13.993 56.4224Z" fill="#E9E6E6" stroke="black" stroke-width="0.3"/>
+            <path id="Vector 8" d="M13 52.2L13.4 51.8L13.8 52.2V52.6H14.2L14.6 53L14.2 53.4H13.8V53.8L13.4 54.2L13 53.8V53.4H12.6L12.2 53L12.6 52.6H13V52.2Z" fill="black" stroke="black" stroke-width="0.17"/>
+            <circle id="Ellipse 4" cx="22.2" cy="52.2" r="0.4" fill="#403A3A"/>
+            <circle id="Ellipse 5" cx="21.4" cy="53" r="0.4" fill="#403A3A"/>
+            <circle id="Ellipse 6" cx="22.2" cy="53.8" r="0.4" fill="#403A3A"/>
+            <circle id="Ellipse 7" cx="23" cy="53" r="0.4" fill="#403A3A"/>
+            <circle id="Ellipse 8" cx="20.2" cy="55" r="0.8" fill="#232323"/>
+            <circle id="Ellipse 9" cx="15.4" cy="55" r="0.8" fill="#232323"/>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_1_2">
+            <rect width="106" height="59" fill="white"/>
+        </clipPath>
+    </defs>
+</svg>
