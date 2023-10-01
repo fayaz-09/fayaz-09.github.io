@@ -2,7 +2,7 @@ html {
     font-size: 22px;
 }
 body{
-    background-color: #333;
+    background: linear-gradient(45deg,#333, rgb(49, 1, 61), #333);
     color: whitesmoke;
     display: grid;
     font-family: 'Roboto Condensed', sans-serif;
@@ -14,7 +14,6 @@ img{
 }
 
 .main-header{
-  height: auto;
   width: 100%;
   display: grid;
 }
@@ -38,11 +37,23 @@ img{
 }
 
 .svg-main {
-  display: inline-block;
   width: 60%;
   height: auto;
-  align-self: center;
+  text-align: center;
   position: relative;
+  display: inline-block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.intro-text{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  justify-self: right;
+  border-color: aquamarine;
+  border-width: 0.1vw;
+  border-style: solid;
 }
 
 .top-Bar {
@@ -64,32 +75,31 @@ img{
 
 .links-Container {
   height: 3vw;
-  width: 18vw;
+  width: auto;
   display: grid;
   position: relative;
   display: inline-block;
   align-items: center;
   justify-self: right;
-  border-color: aquamarine;
-  border-width: 0.1vw;
-  border-style: solid;
 }
 
 .link-box {
   height: 3vw;
   width: 4vw;
   display: inline-block;
-  background-color: blueviolet;
-  justify-self: left;
-  border-color: black;
-  border-width: 0.1vw;
-  border-style: solid;
+}
+
+.link-logo{
+  width: auto;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-Container {
   height: 3vw;
   width: 10vw;
-  margin-right: 61vw;
+  margin-right: 65vw;
   display: grid;
   position: relative;
   display: inline-block;
@@ -101,7 +111,8 @@ img{
 }
 
 .intro-container {
-  width: 90%;
+  width: 100%;
+  height: 100%;
   margin-right: auto;
   margin-left: auto;
   border-color: aquamarine;
@@ -272,5 +283,257 @@ img{
   padding: 1% 1%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#monitor{
+  animation: monitor-drop 2s ease;
+}
+
+@keyframes monitor-drop{
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+#mouse{
+  animation: mouse-drop 1.5s ease-in;
+}
+
+@keyframes mouse-drop{
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+#keyboard{
+  animation: keyboard-drop 1.5s ease-in-out;
+}
+
+@keyframes keyboard-drop{
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+#console{
+  animation: console-drop 1s linear;
+}
+
+@keyframes console-drop{
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+#controller{
+  animation: controller-drop 2.5s ease-out;
+}
+
+@keyframes controller-drop{
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+#hello {
+  transform: translateX(-100px);
+}
+
+#hello path:nth-child(1)
+{
+  animation: text-move 0s ;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(2)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.1s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(3)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(4)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.3s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(5)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(6)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(7)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.6s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(8)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(9)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+}
+
+#hello path:nth-child(10)
+{
+  animation: text-move 0s ;
+  animation-delay: 3.9s;
+  animation-fill-mode: forwards;
+}
+
+#welcome{
+  transform: translateX(-100px);
+}
+
+#welcome path:nth-child(1){
+  animation: text-move 0s ;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(2){
+  animation: text-move 0s ;
+  animation-delay: 4.1s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(3){
+  animation: text-move 0s ;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(4){
+  animation: text-move 0s ;
+  animation-delay: 4.3s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(5){
+  animation: text-move 0s ;
+  animation-delay: 4.4s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(6){
+  animation: text-move 0s ;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(7){
+  animation: text-move 0s ;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(8){
+  animation: text-move 0s ;
+  animation-delay: 4.7s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(9){
+  animation: text-move 0s ;
+  animation-delay: 4.8s;
+  animation-fill-mode: forwards;
+}#welcome path:nth-child(10){
+  animation: text-move 0s ;
+  animation-delay: 4.9s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(11){
+  animation: text-move 0s ;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(12){
+  animation: text-move 0s ;
+  animation-delay: 5.1s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(13){
+  animation: text-move 0s ;
+  animation-delay: 5.2s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(14){
+  animation: text-move 0s ;
+  animation-delay: 5.3s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(15){
+  animation: text-move 0s ;
+  animation-delay: 5.4s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(16){
+  animation: text-move 0s ;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(17){
+  animation: text-move 0s ;
+  animation-delay: 5.6s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(18){
+  animation: text-move 0s ;
+  animation-delay: 5.7s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(19){
+  animation: text-move 0s ;
+  animation-delay: 5.8s;
+  animation-fill-mode: forwards;
+}
+#welcome path:nth-child(20){
+  animation: text-move 0s ;
+  animation-delay: 5.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-move{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100px);
+  }
 }
 
