@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Fayaz Seedat">
     <meta name="Description" content="This page details the work done on my final year university project soul control">
-    <title>My webpage</title>
-    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <title>Combat alley</title>
+    <link rel="icon" href="images/icon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,20 +16,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-Bar">
 
-        <a title="home icon" href="index.html" class="logo-Container"></a>
+        <a title="home icon" href="index.html" class="logo-Container">
+            <h2>FS</h2>
+        </a>
 
         <div class="links-Container">
-            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                <img src="images/github-mark/github-mark.png" class="link-logo">
+            </a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                <img src="images/LI-In-Bug.png" class="link-logo">
+            </a>
+            <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                <img src="images/mail.png" class="link-logo">
+            </a>
         </div>
-    </div> 
+    </div>  
 
     <header class="proj-header">
         <div class="proj-intro">
@@ -41,6 +52,11 @@
 
     <main class="main-content">
         <div class="summary-container">
+            <h4>2022</h4>
+            <h4>Android</h4>
+            <a title="Play store download" href="https://play.google.com/store/apps/details?id=com.Fayaz.CombatAlley&pcampaignid=web_share" class="play-Container">
+                <img src="images/google-play-badge.png" alt="google play download" class="play-logo">
+            </a>
             <p>
                 Combat alley is a side scrolling endless runner with beat em up elements, for android devices and is available for download on the google play store. The goal is for the player to get as far as possible without taking a hit from one of the various enemies while also avoiding the obstacles on screen.  
             </p>
@@ -50,27 +66,75 @@
             <h2>Gameplay</h2>
 
             <h3>Playable Character</h3>
-            <p>
-                The playable character of the game has three main actions it can perform by touching one of the interactable buttons on screen. The jump button allows the player to avoid the endlessly spawning obstacles while navigating the level. 
-            </p>
 
-            <p>
-                The attack button performs a different action depending on whether the player is on the ground or in the air. On the ground the player can perform a straight punch to defeat enemies that might be in the way. In the air however the action performed is a divekick which not only acts as an attack against enemies waiting below the player, but changes the momentum downwards during a jump which will allow the player to land quicker.
-            </p>
+            <div class="sub-content">
+                <div class="sub-text-mid">
+                    <p>
+                        The playable character of the game has three main actions it can perform by touching one of the interactable buttons on screen. The jump button allows the player to avoid the endlessly spawning obstacles while navigating the level. 
+                    </p>
+                </div>
+                <img src="images/combatAlley/jump_button.png" alt="modelling process image" loading="lazy" class="sub-icon">
+            </div>
+            
+            <div class="sub-content">
+                <img src="images/combatAlley/attack_button.png" alt="modelling process image" loading="lazy" class="sub-icon">
+                <div class="sub-text-mid">
+                    <p>
+                        The attack button performs a different action depending on whether the player is on the ground or in the air. On the ground the player can perform a straight punch to defeat enemies that might be in the way. In the air however the action performed is a divekick which not only acts as an attack against enemies waiting below the player, but changes the momentum downwards during a jump which will allow the player to land quicker.
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                Lastly the range attack button allows the player to attack enemies safely from a distance. To balance this attack from being too powerful, it's on a cooldown so the player will have to wait a few seconds before they can use it again.
-            </p>
+            <div class="sub-content">
+                <div class="sub-text">
+                    <p>
+                        Lastly the range attack button allows the player to attack enemies safely from a distance. To balance this attack from being too powerful, it's on a cooldown so the player will have to wait a few seconds before they can use it again.
+                    </p>
+                </div>
+                <img src="images/combatAlley/throw_button.png" alt="modelling process image" loading="lazy" class="sub-icon">
+            </div>
+
+            
 
             <h3>Enemies</h3>
-            <p>
-                There are two enemy types players will encounter in the game. The first is a melee based enemy which uses spears to attack the player when they get close. This enemy has two different attacks the player will have to look out for, a upwards thrust and a forward thrust. The forward thrust is difficult to avoid if the player remains on the ground while the upward thrust will only hit the player if they’re above the enemy. As the player approaches the spear will flash red to indicate an upward attack or white for a forward one, allowing the player to change what they do based on the incoming attack. The second enemy is a simple projectile enemy which shoots at the player once in sight, and will only fire at a set interval which will allow the player to dodge.
-            </p>
+
+            <div class="sub-content">
+                <img src="images/combatAlley/Enemy_Spear.png" alt="modelling process image" loading="lazy" class="sub-icon">
+                <img src="images/combatAlley/Enemy_Spear_charge.png" alt="modelling process image" loading="lazy" class="sub-icon">
+                <img src="images/combatAlley/Enemy_Spear_Forward.png" alt="modelling process image" loading="lazy" class="sub-icon">
+                <div class="sub-text-mid">
+                    <p>
+                        There are two enemy types players will encounter in the game. The first is a melee based enemy which uses spears to attack the player when they get close. This enemy has two different attacks the player will have to look out for, a upwards thrust and a forward thrust. The forward thrust is difficult to avoid if the player remains on the ground while the upward thrust will only hit the player if they’re above the enemy. As the player approaches the spear will flash red to indicate an upward attack or white for a forward one, allowing the player to change what they do based on the incoming attack. The second enemy is a simple projectile enemy which shoots at the player once in sight, and will only fire at a set interval which will allow the player to dodge.
+                    </p>
+                </div>
+                <img src="images/combatAlley/Enemy_1.png" alt="modelling process image" loading="lazy" class="sub-icon">
+            </div>
 
             <h3>Level creation</h3>
             <p>
                 At the core of an endless runner is the system which controls what appears next in front of the player. As the player advances through the level, new pieces of the level are spawned in front of them just out of their sight, while portions they've passed will be destroyed. Object instantiation and destruction is used to create this system and multiple level parts, which are a variety of prefabs with varying obstacle layouts, are chosen randomly to be spawned in front of the player. This creates a system where the level will keep going endlessly without the player being able to see what's happening in the background.
             </p>
+        </div>
+
+        <div class="projects-container">
+            <div class="footer">
+
+                <p>All content on this site was coded by me using visual studio code. Svg images were also made within figma by me, for specific use on this site.</p>
+
+                <div class="bottom-Bar">
+                    <div class="bot-Links">
+                        <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                            <img src="images/github-mark/github-mark.png" class="link-logo">
+                        </a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                            <img src="images/LI-In-Bug.png" class="link-logo">
+                        </a>
+                        <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                            <img src="images/mail.png" class="link-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

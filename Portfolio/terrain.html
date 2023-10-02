@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Fayaz Seedat">
     <meta name="Description" content="This page details the work done on my final year university project soul control">
-    <title>My webpage</title>
-    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <title>OpenGL Terrain</title>
+    <link rel="icon" href="images/icon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,20 +16,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-Bar">
 
-        <a title="home icon" href="index.html" class="logo-Container"></a>
+        <a title="home icon" href="index.html" class="logo-Container">
+            <h2>FS</h2>
+        </a>
 
         <div class="links-Container">
-            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                <img src="images/github-mark/github-mark.png" class="link-logo">
+            </a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                <img src="images/LI-In-Bug.png" class="link-logo">
+            </a>
+            <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                <img src="images/mail.png" class="link-logo">
+            </a>
         </div>
-    </div> 
+    </div>
 
     <header class="proj-header">
         <div class="proj-intro">
@@ -41,6 +52,7 @@
 
     <main class="main-content">
         <div class="summary-container">
+            <h4>2023</h4>
             <p>
                 This project makes use of various shaders and techniques, within the OpenGL render pipeline, to create a procedurally generated piece of terrain. Technniques implemented include distance based tesselation of the terrain to create more detail via an increased polygon count on areas of the terrain closer to the camera, as well as procedural generation by calculating perlin noise within a compute shader. 
             </p>
@@ -71,14 +83,14 @@
             </p>
             <div class="display-grid">
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/line.PNG" alt="GL_LINE image" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>GL_LINE</h2>
                     </div>
                 </div>
 
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/fill.PNG" alt="GL_FILL image" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>GL_FILL</h2>
                     </div>
@@ -93,14 +105,14 @@
             </p>
             <div class="display-grid">
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/heightMap.PNG" alt="height map terrain" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>Height Map</h2>
                     </div>
                 </div>
 
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/perlin.PNG" alt="perlin noise terrain" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>Perlin noise generated heights</h2>
                     </div>
@@ -114,14 +126,14 @@
             </p>
             <div class="display-grid">
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/surface.PNG" alt="surface normals" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>Surface normals</h2>
                     </div>
                 </div>
 
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images//Terrain/cdm.PNG" alt="central difference method" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>Central difference method (CDM)</h2>
                     </div>
@@ -140,14 +152,14 @@
 
             <div class="display-grid">
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/far.PNG" alt="far" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>Far</h2>
                     </div>
                 </div>
 
                 <div class="display-item">
-                    <img src="images/Fog.PNG" alt="test image" width="1920" height="1080" loading="lazy" class="item-image">
+                    <img src="images/Terrain/close.PNG" alt="close up" width="1920" height="1080" loading="lazy" class="item-image">
                     <div class="display-description">
                         <h2>Close</h2>
                     </div>
@@ -155,6 +167,26 @@
             </div>
         </div>
 
+        <div class="projects-container">
+            <div class="footer">
+
+                <p>All content on this site was coded by me using visual studio code. Svg images were also made within figma by me, for specific use on this site.</p>
+
+                <div class="bottom-Bar">
+                    <div class="bot-Links">
+                        <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                            <img src="images/github-mark/github-mark.png" class="link-logo">
+                        </a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                            <img src="images/LI-In-Bug.png" class="link-logo">
+                        </a>
+                        <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                            <img src="images/mail.png" class="link-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>

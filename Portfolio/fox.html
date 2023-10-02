@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Fayaz Seedat">
     <meta name="Description" content="This page details the work done on my final year university project soul control">
-    <title>My webpage</title>
-    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <title>Fox modelling</title>
+    <link rel="icon" href="images/icon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-Bar">
 
-        <a title="home icon" href="index.html" class="logo-Container"></a>
+        <a title="home icon" href="index.html" class="logo-Container">
+            <h2>FS</h2>
+        </a>
 
         <div class="links-Container">
-            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                <img src="images/github-mark/github-mark.png" class="link-logo">
+            </a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                <img src="images/LI-In-Bug.png" class="link-logo">
+            </a>
+            <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                <img src="images/mail.png" class="link-logo">
+            </a>
         </div>
     </div> 
 
@@ -41,6 +52,7 @@
 
     <main class="main-content">
         <div class="summary-container">
+            <h4>2022</h4>
             <p>
                 The following details the process of using autodesk maya to create a model of a fox and then animating it to create a walk cycle. 
             </p>
@@ -49,37 +61,99 @@
         <div class="summary-container">
             <h2>Modelling</h2>
 
-            <p>
-                The base polygon primitive I chose to create the body of the fox was the cylinder. This was chosen as it was the closest to the shape of the body out of all the primitives available. I then began to alter the cylinder by moving edges, faces and vertices until I got the basic shape of the body. My goal in the early stages of modelling is to get the basic outline of the fox done, so then I can build and iterate on that core shape. 
-            </p>
+            <div class="sub-content">
+                <div class="sub-text">
+                    <p>
+                        The base polygon primitive I chose to create the body of the fox was the cylinder. This was chosen as it was the closest to the shape of the body out of all the primitives available. I then began to alter the cylinder by moving edges, faces and vertices until I got the basic shape of the body. My goal in the early stages of modelling is to get the basic outline of the fox done, so then I can build and iterate on that core shape. 
+                    </p>
+                </div>
+                <img src="images/model/Modelling_1.PNG" alt="modelling process image" loading="lazy" class="sub-image">
+            </div>
 
-            <p>
-                I then created the legs of the fox out of cylinders. I used a similar process to when I created the shape of the body and used the image plane as a guide for the general shape of the legs. Once I had completed a single back and front leg I duplicated both so I could get both the right and left sided legs. I then used the union tool to attach the legs to the main body of the model.
-            </p>
+            
 
-            <p>
-                To create the ears I originally went with a cone as the base, but then decided to go with a sphere as the base since it ended up producing a shape which was far less pointy and more in line with the shape of the fox. I then, like with the legs, used the union tool to join the ears to the model. Some fixing was required also and I once again used the multi-cut and target weld tools.
-            </p>
+            <div class="sub-content">
+                <img src="images/model/Leg_modelling.PNG" alt="modelling process image" loading="lazy" class="sub-image">
+                <div class="sub-text">
+                    <p>
+                        I then created the legs of the fox out of cylinders. I used a similar process to when I created the shape of the body and used the image plane as a guide for the general shape of the legs. Once I had completed a single back and front leg I duplicated both so I could get both the right and left sided legs. I then used the union tool to attach the legs to the main body of the model.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="sub-content">
+                <img src="images/model/modelling_14.PNG" alt="modelling process image" loading="lazy" class="sub-image">
+                <div class="sub-text">
+                    <p>
+                        To create the ears I originally went with a cone as the base, but then decided to go with a sphere as the base since it ended up producing a shape which was far less pointy and more in line with the shape of the fox. I then, like with the legs, used the union tool to join the ears to the model. Some fixing was required also and I once again used the multi-cut and target weld tools.
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                I then began to add more details to the model. This included reshaping the head to make it more detailed and in line with the shape of a fox. I added the outline of the mouth when its closed as well as the shape which protrudes of the jaw area which foxes are known for alongside their tails
-            </p>
+            <div class="sub-content">
+                <div class="sub-text-wide">
+                    <p>
+                        I then began to add more details to the model. This included reshaping the head to make it more detailed and in line with the shape of a fox. I added the outline of the mouth when its closed as well as the shape which protrudes of the jaw area which foxes are known for alongside their tails
+                    </p>
+                </div>
+                <img src="images/model/modelling_19.PNG" alt="modelling process image" loading="lazy" class="sub-image-wide">
+            </div>
+
+            
 
             <h2>Rigging</h2>
 
-            <p>
-                I used mixamo to rig the model however it doesn’t work perfectly with animals so I then had to adjust the rig it outputted myself, so that there was a tail included and it more perfectly fit the model. I also had to paint some of the skin weights myself as the model was heavily distorting as I moved the joints. 
-            </p>
+            <div class="sub-content">
+                <div class="sub-text-wide">
+                    <p>
+                        I used mixamo to rig the model however it doesn’t work perfectly with animals so I then had to adjust the rig it outputted myself, so that there was a tail included and it more perfectly fit the model. I also had to paint some of the skin weights myself as the model was heavily distorting as I moved the joints. 
+                    </p>
+                </div>
+                <img src="images/model/Rigging_4.PNG" alt="modelling process image" loading="lazy" class="sub-image-wide">
+            </div>
+            
 
             <h2>Animation</h2>
 
-            <p>
-                For the animation I first used keyframes to set the position I wanted the limbs to be in at the start and end of a single motion. I then created key frames in between these motions so that the movements would look more fluid. To make sure all the limbs moved in sync with each other I made sure to time the beats in the animation appropriately. For example if one leg goes forward on the 52nd frame of the animation, I made sure the opposite leg would start the process of moving back. 
-            </p>
+            <div class="sub-content">
+                <img src="images/model/Animation_5.PNG" alt="modelling process image" loading="lazy" class="sub-image-wide">
+                <div class="sub-text-wide">
+                    <p>
+                        For the animation I first used keyframes to set the position I wanted the limbs to be in at the start and end of a single motion. I then created key frames in between these motions so that the movements would look more fluid. To make sure all the limbs moved in sync with each other I made sure to time the beats in the animation appropriately. For example if one leg goes forward on the 52nd frame of the animation, I made sure the opposite leg would start the process of moving back. 
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                As the fox walks the tail bobs up and down with each step, as well as swaying slightly from left to right depending on which foot has taken a step. When the fox jumps I tried to incorporate an arc for it to follow as well as the tail having secondary motion where as the fox is falling it points upward due to the fall. 
-            </p>
+            <div class="sub-content">
+                <img src="images/model/Animation_9.PNG" alt="modelling process image" loading="lazy" class="sub-image">
+                <div class="sub-text">
+                    <p>
+                        As the fox walks the tail bobs up and down with each step, as well as swaying slightly from left to right depending on which foot has taken a step. When the fox jumps I tried to incorporate an arc for it to follow as well as the tail having secondary motion where as the fox is falling it points upward due to the fall. 
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="projects-container">
+            <div class="footer">
+
+                <p>All content on this site was coded by me using visual studio code. Svg images were also made within figma by me, for specific use on this site.</p>
+
+                <div class="bottom-Bar">
+                    <div class="bot-Links">
+                        <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                            <img src="images/github-mark/github-mark.png" class="link-logo">
+                        </a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                            <img src="images/LI-In-Bug.png" class="link-logo">
+                        </a>
+                        <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                            <img src="images/mail.png" class="link-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

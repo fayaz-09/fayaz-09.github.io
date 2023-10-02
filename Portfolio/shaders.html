@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Fayaz Seedat">
     <meta name="Description" content="This page details the work done on my final year university project soul control">
-    <title>My webpage</title>
-    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <title>OpenGL Shaders</title>
+    <link rel="icon" href="images/icon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-Bar">
 
-        <a title="home icon" href="index.html" class="logo-Container"></a>
+        <a title="home icon" href="index.html" class="logo-Container">
+            <h2>FS</h2>
+        </a>
 
         <div class="links-Container">
-            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                <img src="images/github-mark/github-mark.png" class="link-logo">
+            </a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                <img src="images/LI-In-Bug.png" class="link-logo">
+            </a>
+            <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                <img src="images/mail.png" class="link-logo">
+            </a>
         </div>
     </div> 
 
@@ -41,6 +52,7 @@
 
     <main class="main-content">
         <div class="summary-container">
+            <h4>2023</h4>
             <p>
                 An OpenGL based project which explores the basics of lighting, post processing and mapping techniques.
             </p>
@@ -100,16 +112,30 @@
             </p>
 
             <h3>Diffuse maps</h3>
-
-            <p>
-                Diffuse maps are an image which will wrapped around an object to determine the colour data for each fragment. To visually see the texture applied to a desired object, it's shader needs to be updated so that instead of setting a colour for each fragment the textures colour data is pulled from instead.
-            </p>
-
+            
+            <div class="sub-content">
+                <img src="images/OpenGL/diffuse.PNG" alt="modelling process image" loading="lazy" class="sub-image">
+                <div class="sub-text">
+                    <p>
+                        Diffuse maps are an image which can be wrapped around an object to determine the colour data for each fragment. To visually see the texture applied to a desired object, it's shader needs to be updated so that instead of setting a colour for each fragment the textures colour data is pulled from instead.
+                    </p>
+                </div>
+                
+                <h4>Cube with diffuse mapping</h4>
+            </div>
+            
             <h3>Specular Maps</h3>
 
-            <p>
-                Specular maps are used to accurately portray specular highlights on an object. If the diffuse map we’ve used for an object is a material that doesn’t reflect light well, such as concrete or wood, then it shouldn’t have specular highlights that would be more typical of a metallic object. Specular maps are black and white images where pixels with values closer to white will mean a higher specular component in that part of the texture.
-            </p>
+            <div class="sub-content">
+                <img src="images/OpenGL/specular2.PNG" alt="modelling process image" loading="lazy" class="sub-image-wide">
+                <h4 class="sub-caption-wide">Cube with specular mapping on top of diffuse mapping</h4>
+                <div class="sub-text-wide">
+                    <p>
+                        Specular maps are used to accurately portray specular highlights on an object. If the diffuse map we’ve used for an object is a material that doesn’t reflect light well, such as concrete or wood, then it shouldn’t have specular highlights that would be more typical of a metallic object. Specular maps are black and white images where pixels with values closer to white will mean a higher specular component in that part of the texture.
+                    </p>
+                </div>
+                
+            </div>
 
             <h3>Normal mapping</h3>
 
@@ -122,8 +148,45 @@
             <p>
                 Like normal mapping in that its used to provide an illusion of depth and provides a texture with a more highly detailed look. When paired with normal mapping the results are a surface that looks like it has varied level of raises and divots, as well as adjusting to the cameras view to maintain this look. Parallax mapping is similar to displacement mapping techniques where vertices are offset based on the geometrical values stored within a texture, with both even using a displacement map to do this also called a height map. Parallax mapping however tries to achieve this effect by using fewer vertices than displacement mapping. The goal is to offset texture coordinates based on the angle its viewed from so that a fragments surface appears higher or lower than it actually is. 
             </p>
+
+            <div class="display-grid">
+                <div class="display-item">
+                    <img src="images/OpenGL/normalMap.PNG" alt="Normal mapping" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Normal Map</h2>
+                    </div>
+                </div>
+
+                <div class="display-item">
+                    <img src="images/OpenGL/parralaxMap.PNG" alt="Parralax mapping" width="1920" height="1080" loading="lazy" class="item-image">
+                    <div class="display-description">
+                        <h2>Parralax map</h2>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
+        <div class="projects-container">
+            <div class="footer">
+
+                <p>All content on this site was coded by me using visual studio code. Svg images were also made within figma by me, for specific use on this site.</p>
+
+                <div class="bottom-Bar">
+                    <div class="bot-Links">
+                        <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                            <img src="images/github-mark/github-mark.png" class="link-logo">
+                        </a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                            <img src="images/LI-In-Bug.png" class="link-logo">
+                        </a>
+                        <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                            <img src="images/mail.png" class="link-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </main>
 

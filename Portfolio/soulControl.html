@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Fayaz Seedat">
     <meta name="Description" content="This page details the work done on my final year university project soul control">
-    <title>My webpage</title>
-    <link rel="icon" href="images/html5.png" type="image/x-icon">
+    <title>Soul Control</title>
+    <link rel="icon" href="images/icon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="top-Bar">
 
-        <a title="home icon" href="index.html" class="logo-Container"></a>
+        <a title="home icon" href="index.html" class="logo-Container">
+            <h2>FS</h2>
+        </a>
 
         <div class="links-Container">
-            <a title="Social" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social2" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social3" href="https://github.com/fayaz-09" class="link-box"></a>
-            <a title="Social4" href="https://github.com/fayaz-09" class="link-box"></a>
+            <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                <img src="images/github-mark/github-mark.png" class="link-logo">
+            </a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                <img src="images/LI-In-Bug.png" class="link-logo">
+            </a>
+            <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                <img src="images/mail.png" class="link-logo">
+            </a>
         </div>
     </div> 
 
@@ -41,12 +53,19 @@
 
     <main class="main-content">
         <div class="summary-container">
+            <h4>2023</h4>
             <p>
                 Soul control is a third person action game, featuring hack and slash inspired gameplay. The main aim of the project was to create a game which allowed the player to interact with enemies that are controlled by a variety of different AI implementations. The game was designed to be a test project which explores the use of these implementations and how an AI controlled enemy behaves based on the system it's given. 
             </p>
             <p>
                 While the game was created for my final year in university, i'm actively continuing development on the project in my free time as I one day wish to have the game in a state which would be acceptable for potential players. All aspects of the game were created by me outside of the character models and as such I learnt a large amount during development and wish to learn more as I work on it. 
             </p>
+
+            <h2>Test Demo</h2>
+            <video controls width="250">
+                <source src="video/testDemo.mp4">
+            </video>
+
         </div>
 
         <div class="summary-container">
@@ -93,6 +112,27 @@
             <p>
                 A goal-oriented approach to ai development puts focus on the end goal of each action. For example, if an ai controlled entity is low on health, depending on how low it is it may shift its current goal from attacking the player to finding an item to gain health. GOAP development consists of assigning values to the actions the ai can take. This value is a priority number and depending on the current game state multiple actions can be available to an AI agent at a single time but it will always undertake the one which has the higher priority. The priority value of an action can also change depending on the given circumstance, for example if an enemy has low health the priority of finding health can be increased so that action takes precedent over others.
             </p>
+        </div>
+
+        <div class="projects-container">
+            <div class="footer">
+
+                <p>All content on this site was coded by me using visual studio code. Svg images were also made within figma by me, for specific use on this site.</p>
+
+                <div class="bottom-Bar">
+                    <div class="bot-Links">
+                        <a title="Github" href="https://github.com/fayaz-09" class="link-box">
+                            <img src="images/github-mark/github-mark.png" class="link-logo">
+                        </a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/fayaz-seedat-220b72149/" class="link-box">
+                            <img src="images/LI-In-Bug.png" class="link-logo">
+                        </a>
+                        <a title="Email" href="mailto:fayazseedat09@gmail.com" class="link-box">
+                            <img src="images/mail.png" class="link-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
